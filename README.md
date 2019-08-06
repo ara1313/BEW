@@ -77,7 +77,7 @@ Create a pre-signature string formed from the following items and concatenating 
 
 Once you have created this pre-sign string, sign it via HmacSHA512, using your API secret as the signing secret. Hex-encode the result of this operation and populate the Api-Signature header with it.
 
-__Sample JS Code Snippet: __
+__Sample JS Code Snippet:__
 ```
 var uri = 'https://api.bittrex.com/v3/balances';
 var apiSecret = “c6df75xxxxxxxa3d92daxxxxxxx375a3”
@@ -89,7 +89,7 @@ __Example Pre-Signed Value:with subaccount)__
 
 ```1542323450016https://api.bittrex.com/v3/balancesGETcf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3ex111x11x-8968-48ac-b956-x1x11x111111```
 
-__Example Post-Signed Value: __
+__Example Post-Signed Value:__
 
 ```47623f0efbe10bfbb32f18e5d8885b2a91be3c3cea82adf0dd2d20892b20bcb6a10a91fec3afcedcc009f2b2a86c5366974cfadcf671fe0490582568f51f```
 
