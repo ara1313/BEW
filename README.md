@@ -185,8 +185,8 @@ Retrieve details for a specified subaccount. (NOTE: This API is limited to par
 ##### Response Example (200OK)
 ```
 {
-	"id": "5c838f11-f13c-47f7-8961-a5bfc0e982c2",
-	"createdAt": "2019-06-18T17:56:00.087Z"
+    "id": "5c838f11-f13c-47f7-8961-a5bfc0e982c2",
+    "createdAt": "2019-06-18T17:56:00.087Z"
 }
 ```
 
@@ -226,9 +226,9 @@ Retrieve account balance for a specific currency. Request will always succeed wh
 ##### Response Example (200OK)
 ```
 { 
-	"currencySymbol": "BTC", 
-	"total": "0.65363625", 
-	"available": "0.65363625" 
+    "currencySymbol": "BTC", 
+    "total": "0.65363625", 
+    "available": "0.65363625" 
 }   
 ```
 
@@ -269,7 +269,7 @@ Request provisioning of a deposit address for a currency for which no address ha
 ```
 ##### Response Example (200OK)
 ```
- { 
+{ 
     "status": "PROVISIONED", 
     "currencySymbol": "BTC", 
     "cryptoAddress": "2N8e4ZjZofi9W33P4ZrJjmqRF7zZTXHB16t " 
@@ -300,18 +300,18 @@ List open deposits. Results are sorted in inverse order of UpdatedAt and are lim
 ##### Response Example (200OK)
 ```
 [
-	{ 
-		"id": "string (uuid)", 
-		"currencySymbol": "string", 
-		"quantity": "number (double)", 
-		"cryptoAddress": "string", 
-		"cryptoAddressTag": "string", 
-		"txId": "string", 
-		"confirmations": "integer (int32)", 
-		"updatedAt": "string (date-time)", 
-		"completedAt": "string (date-time)",
-		"status": "string"
-	}
+    { 
+	"id": "string (uuid)", 
+	"currencySymbol": "string", 
+	"quantity": "number (double)", 
+	"cryptoAddress": "string", 
+	"cryptoAddressTag": "string", 
+	"txId": "string", 
+	"confirmations": "integer (int32)", 
+	"updatedAt": "string (date-time)", 
+	"completedAt": "string (date-time)",
+	"status": "string"
+    }
 ] 
 ```
 
@@ -323,18 +323,18 @@ List closed deposits. StartDate and EndDate filters apply to the CompletedAt fie
 ##### Response Example (200OK)
 ```
 [
-	{ 
-		"id": "string (uuid)", 
-		"currencySymbol": "string", 
-		"quantity": "number (double)", 
-		"cryptoAddress": "string", 
-		"cryptoAddressTag": "string", 
-		"txId": "string", 
-		"confirmations": "integer (int32)", 
-		"updatedAt": "string (date-time)", 
-		"completedAt": "string (date-time)", 
-		"status": "string" 
-	}
+    { 
+	"id": "string (uuid)", 
+	"currencySymbol": "string", 
+	"quantity": "number (double)", 
+	"cryptoAddress": "string", 
+	"cryptoAddressTag": "string", 
+	"txId": "string", 
+	"confirmations": "integer (int32)", 
+	"updatedAt": "string (date-time)", 
+	"completedAt": "string (date-time)", 
+	"status": "string" 
+    }
 ] 
 ```
 
@@ -346,18 +346,18 @@ Retrieves all deposits for this account with the given TxId.
 ##### Response Example (200OK)
 ```
 [
-	{ 
-		"id": "string (uuid)", 
-		"currencySymbol": "string", 
-		"quantity": "number (double)", 
-		"cryptoAddress": "string", 
-		"cryptoAddressTag": "string", 
-		"txId": "string", 
-		"confirmations": "integer (int32)", 
-		"updatedAt": "string (date-time)", 
-		"completedAt": "string (date-time)", 
-		"status": "string" 
-	}
+    { 
+	"id": "string (uuid)", 
+	"currencySymbol": "string", 
+	"quantity": "number (double)", 
+	"cryptoAddress": "string", 
+	"cryptoAddressTag": "string", 
+	"txId": "string", 
+	"confirmations": "integer (int32)", 
+	"updatedAt": "string (date-time)", 
+	"completedAt": "string (date-time)", 
+	"status": "string" 
+    }
 ] 
 ```
 
@@ -369,18 +369,18 @@ Retrieve information for a specific deposit.
 ##### Response Example (200OK)
 ```
 [
-	{ 
-		"id": "string (uuid)", 
-		"currencySymbol": "string", 
-		"quantity": "number (double)", 
-		"cryptoAddress": "string", 
-		"cryptoAddressTag": "string", 
-		"txId": "string", 
-		"confirmations": "integer (int32)", 
-		"updatedAt": "string (date-time)", 
-		"completedAt": "string (date-time)", 
-		"status": "string" 
-	}
+    { 
+	"id": "string (uuid)", 
+	"currencySymbol": "string", 
+	"quantity": "number (double)", 
+	"cryptoAddress": "string", 
+	"cryptoAddressTag": "string", 
+	"txId": "string", 
+	"confirmations": "integer (int32)", 
+	"updatedAt": "string (date-time)", 
+	"completedAt": "string (date-time)", 
+	"status": "string" 
+    }
 ] 
 ```
 
@@ -460,15 +460,15 @@ Retrieve information on a specified withdrawal.
 ```
 [ 
     { 
-		"id": "1e411139-df4a-4406-8353-25abbf793f75", 
-		"currencySymbol": "BTC", 
-		"quantity": "0.00095000", 
-		"cryptoAddress": "bc1qljg8qdesd49jyz7s0gamc7pqz3r2wmxa9vrmug", 
-		"cryptoAddressTag": "", 
-		"txCost": "0.00005000", 
-		"status": "CANCELLED", 
-		"createdAt": "2019-05-30T22:28:28.817Z", 
-		"completedAt": "2019-06-11T19:16:21.67Z" 
+	"id": "1e411139-df4a-4406-8353-25abbf793f75", 
+	"currencySymbol": "BTC", 
+	"quantity": "0.00095000", 
+	"cryptoAddress": "bc1qljg8qdesd49jyz7s0gamc7pqz3r2wmxa9vrmug", 
+	"cryptoAddressTag": "", 
+	"txCost": "0.00005000", 
+	"status": "CANCELLED", 
+	"createdAt": "2019-05-30T22:28:28.817Z", 
+	"completedAt": "2019-06-11T19:16:21.67Z" 
     } 
 ] 
 ```
@@ -491,22 +491,22 @@ Create new withdrawal. Please note: You will get an error if you try to send coi
 ##### Request Body
 ```
 {
-	"currencySymbol": "BTC", 
-	"quantity": "1", 
-	 "address": "1J8rcVPwRjJdi1jhk95AsjMfsLBbP7x7bS" 
+    "currencySymbol": "BTC", 
+    "quantity": "1", 
+    "address": "1J8rcVPwRjJdi1jhk95AsjMfsLBbP7x7bS" 
 }
 ```
 ##### Response Example (200OK)
 ```
 { 
-	"id": "b239807d-b921-40e7-bc71-553fdff2d1fb",
-	"currencySymbol": "BTC",
-	"quantity": "0.00095000",
-	"cryptoAddress": "2MsM3kfaANtqz4ASuSFCmk5skspYkpj3a1y",
-	"cryptoAddressTag": "",
-	"txCost": "0.00005000",
-	"status": "AUTHORIZED",
-	"createdAt": "2019-06-18T16:55:35.95Z"
+    "id": "b239807d-b921-40e7-bc71-553fdff2d1fb",
+    "currencySymbol": "BTC",
+    "quantity": "0.00095000",
+    "cryptoAddress": "2MsM3kfaANtqz4ASuSFCmk5skspYkpj3a1y",
+    "cryptoAddressTag": "",
+    "txCost": "0.00005000",
+    "status": "AUTHORIZED",
+    "createdAt": "2019-06-18T16:55:35.95Z"
 }
 ```
 
@@ -524,9 +524,9 @@ Append subaccountID to the header and preSignature
 ##### Request Body
 ```
 { 
-	"toMasterAccount": true, 
-	"currencySymbol": "BTC", 
-	"amount": "0.0001"
+    "toMasterAccount": true, 
+    "currencySymbol": "BTC", 
+    "amount": "0.0001"
 }
 ```
 ##### Response Example (200OK)
@@ -542,16 +542,16 @@ Append subaccountID to the header and preSignature
 ##### Request Body
 ```
 { 
-	"toSubaccountId": "592c8a5b-703f-4b3c-899f-5d5ea1ad8fea", 
-	"currencySymbol": "BTC", 
-	"amount": "0.0001" 
+    "toSubaccountId": "592c8a5b-703f-4b3c-899f-5d5ea1ad8fea", 
+    "currencySymbol": "BTC", 
+    "amount": "0.0001" 
 }
 ```
 ##### Response Example (200OK)
 ```
 { 
-	"id": "01e203ec-bb4a-4b52-9f49-914a88d52b2b", 
-	"executedAt": "2019-06-17T21:25:58.05Z"
+    "id": "01e203ec-bb4a-4b52-9f49-914a88d52b2b", 
+    "executedAt": "2019-06-17T21:25:58.05Z"
 }
 ```
 
@@ -561,15 +561,15 @@ Append subaccountID to the header and preSignature
 ##### Request Body
 ```
 { 
-	"toSubaccountId": "b61bdb98-ed6a-4bbf-8cec-43ff31518b01", 
-	"currencySymbol": "BTC", 
-	"amount": "0.0001"
+    "toSubaccountId": "b61bdb98-ed6a-4bbf-8cec-43ff31518b01", 
+    "currencySymbol": "BTC", 
+    "amount": "0.0001"
 } 
 ```
 ##### Response Example (200OK)
 ```
 { 
-   "id": "01e203ec-bb4a-4b52-9f49-914a88d52b2b", 
+    "id": "01e203ec-bb4a-4b52-9f49-914a88d52b2b", 
     "executedAt": "2019-06-17T21:25:58.05Z"
 }
 ```
