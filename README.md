@@ -518,7 +518,7 @@ General notes on internal transfers.
 
 #### POST /v3/transfers
 
-####Transfer from subaccount to master.
+#### Transfer from subaccount to master.
 Append subaccountID to the header and preSignature
 ##### Request URI  https://api.bittrex.com/v3/transfers
 ##### Request Body
@@ -537,7 +537,7 @@ Append subaccountID to the header and preSignature
 }
 ```
 
-####Transfer from master to subaccount.
+#### Transfer from master to subaccount.
 ##### Request URI  https://api.bittrex.com/v3/transfers
 ##### Request Body
 ```
@@ -555,7 +555,7 @@ Append subaccountID to the header and preSignature
 }
 ```
 
-####Transfer from subaccount to subaccount.
+#### Transfer from subaccount to subaccount.
 Append subaccountID to the header and preSignature
 ##### Request URI  https://api.bittrex.com/v3/transfers
 ##### Request Body
@@ -576,7 +576,7 @@ Append subaccountID to the header and preSignature
 
 #### GET /v3/transfers/{transferID}
 
-##### Get transfer by ID (from master to subaccount)
+#### Get transfer by ID (from master to subaccount)
 ##### Request URI  https://api.bittrex.com/v3/transfers/{transferID}
 ##### Response Example (200OK)
 ```
@@ -589,7 +589,7 @@ Append subaccountID to the header and preSignature
 } 
 ```
 
-##### Get transfer by ID (from subaccount to subaccount)
+#### Get transfer by ID (from subaccount to subaccount)
 Append subaccountID to the header and preSignature
 ##### Request URI  https://api.bittrex.com/v3/transfers/{transferID}
 ##### Response Example (200OK)
@@ -603,7 +603,7 @@ Append subaccountID to the header and preSignature
 }
 ```
 
-##### Get transfer by ID (from subaccount to master)
+#### Get transfer by ID (from subaccount to master)
 Header: SubaccountId required and the preSignature needs the subaccountID.
 ##### Request URI  https://api.bittrex.com/v3/transfers/{transferID}
 ##### Response Example (200OK)
@@ -619,7 +619,7 @@ Header: SubaccountId required and the preSignature needs the subaccountID.
 
 ### GET /v3/transfers/sent
 
-####Get list of sent transfers from master to subaccounts
+#### Get list of sent transfers from master to subaccounts
 ##### Request URI  https://api.bittrex.com/v3/transfers/sent
 ##### Response Example (200OK)
 ```
@@ -641,7 +641,7 @@ Header: SubaccountId required and the preSignature needs the subaccountID.
 ] 
 ```
 
-####Get list of sent transfers from subaccount to subaccounts and master
+#### Get list of sent transfers from subaccount to subaccounts and master
 Append subaccountID to the header and preSignature
 ##### Request URI  https://api.bittrex.com/v3/transfers/sent
 ##### Response Example (200OK)
@@ -666,7 +666,7 @@ Append subaccountID to the header and preSignature
 
 ### GET /v3/transfers/received
 
-####Get list of received transfers by master
+#### Get list of received transfers by master
 ##### Request URI  https://api.bittrex.com/v3/transfers/received
 ##### Response Example (200OK)
 ```
@@ -681,7 +681,7 @@ Append subaccountID to the header and preSignature
 ] 
 ```
 
-####Get list of received transfers by subaccount
+#### Get list of received transfers by subaccount
 Append subaccountID to the header and preSignature
 ##### Request URI  https://api.bittrex.com/v3/transfers/received
 ##### Response Example (200OK)
